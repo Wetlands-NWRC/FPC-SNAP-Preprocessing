@@ -9,6 +9,6 @@
 
 # Flow
 - make sure JDK is on path 
-'''sh
+```sh
 java --version
-'''
+```
