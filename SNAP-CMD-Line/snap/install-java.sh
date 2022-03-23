@@ -1,6 +1,6 @@
 #!bin\bash
 
-sudo apt install -y open-jdk-11-jdk
+apt install -y open-jdk-11-jdk
 
 # set java home to path
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
@@ -9,6 +9,6 @@ export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH=$PATH:$JAVA_HOME/bin
 
 # Insall maven
-sudo apt update
-sudo apt install -y maven
+apt update
+apt install -y maven
 
