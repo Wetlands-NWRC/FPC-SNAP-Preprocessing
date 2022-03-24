@@ -1,21 +1,29 @@
 #!bin/bash
 
+# check is snap is installed
+if [ -d "/usr/local/snap/bin/snap" ]; then
+  echo "SNAP-ESA already installed exiting ...."
+  exit
+fi
+
 SNAPVER=8
 
 java_max_mem=10G
 
 # set JAVA_HOME for the shell sessions
-
 export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 
 # SET the user name
 USERNAME=wetlands
-SNAPPY_PATH="/home/${USERNAME}/anaconda3/envs/snappy/bin/python"
+CONDA_VERSION=anaconda3
 download_dir=/src/snap
 
+# Python conda path
+SNAPPY_PATH="/home/${USERNAME}/${CONDA_VERSION}/envs/snappy/bin/python"
+
 # source conda
-source "/home/${USERNAME}/anaconda3/etc/profile.d/conda.sh"
+source "/home/${USERNAME}/${CONDA_VERSION}/etc/profile.d/conda.sh"
 
 # ~~~ START SETUP
 if [ ! -d "${download_dir}/jpy" ]
