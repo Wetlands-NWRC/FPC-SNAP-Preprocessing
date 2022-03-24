@@ -25,6 +25,9 @@ SNAPPY_PATH="/home/${USERNAME}/${CONDA_VERSION}/envs/snappy/bin/python"
 # source conda
 source "/home/${USERNAME}/${CONDA_VERSION}/etc/profile.d/conda.sh"
 
+# activate the base python env
+conda activte snappy
+
 # ~~~ START SETUP
 if [ ! -d "${download_dir}/jpy" ]
 then
