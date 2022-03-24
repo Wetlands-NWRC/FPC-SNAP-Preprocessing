@@ -1,6 +1,9 @@
 # NOTE
 These are steps for installing SNAP on Ubuntu.<br> 
 PLEASE NOTE<br>
+
+To Run this you need to be the root user 
+
 All references to SNAP refer to Sentinel Application Platform (SNAP), not snapcraft (alias snap) which is one of the package managers that come with Ubuntu, please be aware of that and keep things seperate from one another, when installing SNAP. you may break the snap package.
 # Resources
 - open jdk: https://vitux.com/how-to-setup-java_home-path-in-ubuntu/

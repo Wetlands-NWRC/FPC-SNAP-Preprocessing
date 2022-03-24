@@ -2,7 +2,7 @@
 deleteSnapDir=DESKTOP
 executeLauncherWithPythonAction$Boolean=true
 forcePython$Boolean=true
-pythonExecutable=/usr/bin/python3
+pythonExecutable=/home/wetlands/anaconda3/envs/snappy/bin/python
 sys.adminRights$Boolean=true
 sys.component.RSTB$Boolean=true
 sys.component.S1TBX$Boolean=true
