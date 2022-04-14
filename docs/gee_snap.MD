@@ -28,30 +28,16 @@ Subset and Co registration are to be indepently of each other
 - Co Registration
     - ref image first image the in the virutal stack
     - all other images are to be registered to the red image
+- Extract Pixel Values
 - Subset / Clip
     - clip to some defined AOI
-    - AOI needs to be in WKT format  
+    - AOI needs to be in WKT format
+- Tile subseted image
   <br>
-# Procesing Chains
 
-## Single Image Processing Chain
-```mermaid
-graph TD
-    aa([start]) ---> A
-    A[Sentinel 1 Image] --> B(Thermal Noise Removal)
-    B ---> C(Radiometic Calibration)
-    C ---> D(Terrain Correction)
-    D ---> E(apply De Speckle Filter)
-    E ---> F([End])
-```
-
-## Iterators
-
-### Co Registraion
-```mermaid
-grpah TD
-    aa([start]) ---> A
-    A[Image Pool] ---> B()                 
-```
-
+### Notes about the Tools
+In the above section the tools are in the order they should happen.  
+Extraction of Pixel values from points needs to happen before subsetting this is because FPC training data can be collected from a much larger area than that of the defined AOI.  
+  
+Tool the tools above replicate exactly what is done in google earth engine
 
